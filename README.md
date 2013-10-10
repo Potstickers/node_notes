@@ -112,7 +112,7 @@ Think of routes like the 'c' in mvc. All the actions will be defined by routes.
    module.exports = function(app){};
    ```
    Remember those `require` calls?, it returns whatever `modules.export` was set to. In this case, a function that takes an `app` object.
-   (More Details)[http://stackoverflow.com/questions/5311334/what-is-the-purpose-of-nodejs-module-exports-and-how-do-you-use-it]
+   [MoreDetails](http://stackoverflow.com/questions/5311334/what-is-the-purpose-of-nodejs-module-exports-and-how-do-you-use-it)
    Now whenever the `./routes` module is required with `require('./routes')(app)`, if no js file is specified, it takes `index.js` by default.
    The app variable was defined in `app.js` and passed to the module which was just a function.
 4. To add a route, in the function add the lines:
